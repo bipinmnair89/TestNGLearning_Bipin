@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="13141" started-at="2019-09-16T15:03:44Z" finished-at="2019-09-16T15:03:57Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="11393" started-at="2019-09-16T15:03:44Z" finished-at="2019-09-16T15:03:55Z">
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6500df86]" name="setup" is-config="true" duration-ms="11353" started-at="2019-09-16T15:03:44Z" finished-at="2019-09-16T15:03:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateEffort()[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6500df86]" name="validateEffort" duration-ms="8" started-at="2019-09-16T15:03:55Z" finished-at="2019-09-16T15:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEffort -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6500df86]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-09-16T15:03:55Z" finished-at="2019-09-16T15:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testNGLearning.test.TestNGParallelExecutionConcept -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="13141" started-at="2019-09-16T15:03:44Z" finished-at="2019-09-16T15:03:57Z">
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6a4f787b]" name="setup" is-config="true" duration-ms="13125" started-at="2019-09-16T15:03:44Z" finished-at="2019-09-16T15:03:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateEffort()[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6a4f787b]" name="validateEffort" duration-ms="7" started-at="2019-09-16T15:03:57Z" finished-at="2019-09-16T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEffort -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testNGLearning.test.TestNGParallelExecutionConcept@6a4f787b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-09-16T15:03:57Z" finished-at="2019-09-16T15:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testNGLearning.test.TestNGParallelExecutionConcept -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

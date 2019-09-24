@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Below Suite Contains the com.testNGLearning package execution -->
+
+<suite name="Suite"  parallel="tests" verbose="8" thread-count="2" >
+  <test name="ChromeTest" >
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="FirefoxTest" >
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Below Suite Contains the com.testNGLearning package execution -->
+
+<suite name="Suite" verbose="5">
+  <test thread-count="5" name="Test">
+  	<parameter name="username" value="rangerSquad"/>
+  	<parameter name="password" value="Pass123"/>
+    <classes>
+      <class name="com.testNGLearning.test.FirstTestNGValidation"/>
+      <class name="com.testNGLearning.test.SecondTestNGValidation"/>    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- Below Suite Contains the com.dataProvider.test package execution -->
+
+<suite name="Dataprovider testing suite">
+  <test thread-count="5" name="Testing dataprovider functionality">
+  	<parameter name="username" value="bipinmnair@gmail.com"/>
+  	<parameter name="password" value="amazonbipin"/>
+    <classes>
+      <class name="com.dataprovider.test.DataProviderTesting"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- Below Suite Contains the RetryLogic class execution -->
+
+<suite name="retryLogic testsuite">
+<listeners>
+  		<listener class-name="com.retryLogicAnalyzers.AnnotationTransformer"/>
+  	</listeners>
+  <test thread-count="5" name="Retrylogic Implementation Test">
+    <classes>
+      <class name="com.testNGLearning.test.ValidateRetryLogicAtRun"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- Below Suite Contains the Parallel tests execution xml -->
+<suite name="Suite"  parallel="tests" verbose="8" thread-count="2" >
+  <test name="ChromeTest" >
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="FirefoxTest" >
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.testNGLearning.test.TestNGParallelExecutionConcept"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+

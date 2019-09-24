@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [retryLogic testsuite]">
+  <listeners>
+    <listener class-name="com.retryLogicAnalyzers.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Retrylogic Implementation Test(failed)">
+    <classes>
+      <class name="com.testNGLearning.test.ValidateRetryLogicAtRun">
+        <methods>
+          <include name="validatePageTitle"/>
+          <include name="tearDown"/>
+          <include name="initialSetup"/>
+        </methods>
+      </class> <!-- com.testNGLearning.test.ValidateRetryLogicAtRun -->
+    </classes>
+  </test> <!-- Retrylogic Implementation Test(failed) -->
+</suite> <!-- Failed suite [retryLogic testsuite] -->
